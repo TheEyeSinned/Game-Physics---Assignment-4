@@ -10,18 +10,15 @@ public class PlayerBehaviour : MonoBehaviour
 
 
     public BulletManager bulletManager;
-    public CollisionManager collisionManager;
 
     void start()
     {
-        collisionManager.GetComponent<Check>
     }
 
     // Update is called once per frame
     void Update()
     {
         _Fire();
-        _FloorCollide();
     }
 
     private void _Fire()
@@ -38,10 +35,5 @@ public class PlayerBehaviour : MonoBehaviour
             }
 
         }
-    }
-
-    private void _FloorCollide()
-    {
-        
     }
 }
