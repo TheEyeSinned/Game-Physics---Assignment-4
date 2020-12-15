@@ -31,6 +31,7 @@ public class CubeBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CollisionReaction();
         max = Vector3.Scale(bounds.max, transform.localScale) + transform.position;
         min = Vector3.Scale(bounds.min, transform.localScale) + transform.position;
     }
@@ -47,6 +48,14 @@ public class CubeBehaviour : MonoBehaviour
             Gizmos.color = Color.magenta;
 
             Gizmos.DrawWireCube(transform.position, Vector3.Scale(new Vector3(1.0f, 1.0f, 1.0f), transform.localScale));
+        }
+    }
+
+    public void CollisionReaction()
+    {
+        if (isColliding == true)
+        {
+            
         }
     }
 }

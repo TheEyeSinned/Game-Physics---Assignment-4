@@ -11,5 +11,10 @@ public class LoadNextScene : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
+    public void PreviousScene(string scene_name)
+    {
+        SceneManager.LoadScene(0);
+    }
+
     }
 

@@ -33,4 +33,11 @@ public class BulletBehaviour : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void _Bounce()
+    {
+        
+      
+            
+    }
 }
